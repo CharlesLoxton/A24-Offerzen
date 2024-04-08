@@ -1,0 +1,11 @@
+{
+  "name": "a24-offerzen",
+  "version": "1.0.0",
+  "description": "A URL shortening service built for the A24 Group Offerzen Assessment",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Charles Loxton",
+  "license": "ISC"
+}
