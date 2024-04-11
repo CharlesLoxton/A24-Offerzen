@@ -1,11 +1,27 @@
 {
-  "name": "a24-offerzen",
+  "name": "a24-assessment",
   "version": "1.0.0",
   "description": "A URL shortening service built for the A24 Group Offerzen Assessment",
   "main": "app.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --exit --timeout 5000 \"test/**/*.test.js\"",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "Charles Loxton",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.0",
+    "short-unique-id": "^5.0.3"
+  },
+  "devDependencies": {
+    "chai": "^5.1.0",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.4.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.4"
+  }
 }
